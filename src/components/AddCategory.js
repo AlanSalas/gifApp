@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { FcSearch } from "react-icons/fc";
 
 const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState("");
@@ -17,8 +18,16 @@ const AddCategory = ({ setCategories }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleChange} />
+    <form className="add-category" onSubmit={handleSubmit}>
+      <div className="add-category__input">
+        <FcSearch />
+        <input
+          type="text"
+          placeholder="Search Gifs!"
+          value={inputValue}
+          onChange={handleChange}
+        />
+      </div>
     </form>
   );
 };

@@ -3,13 +3,12 @@ import AddCategory from "./components/AddCategory";
 import GifContainer from "./components/GifContainer";
 
 const GifApp = () => {
-  const [categories, setCategories] = useState(["Jujutsu Kaisen"]);
+  const [categories, setCategories] = useState(["Welcome"]);
 
   return (
-    <div>
-      <h2>Gif App</h2>
+    <div className="gif-app">
+      <h2 className="gif-app__title">Gif App</h2>
       <AddCategory setCategories={setCategories} />
-      <hr />
 
       {categories.map((category) => (
         <GifContainer key={category} category={category} />
