@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in Gif component Should render properly 1`] = `
+<div
+  className="gif"
+>
+  <img
+    alt="title"
+    src="https://test.com"
+    title="title"
+  />
+</div>
+`;
