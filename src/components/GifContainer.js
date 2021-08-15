@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Masonry from "react-masonry-css";
 import Gif from "./Gif";
 import Spinner from "./Spinner";
@@ -27,6 +28,10 @@ const GifContainer = ({ category }) => {
       </Masonry>
     </div>
   );
+};
+
+GifContainer.propTypes = {
+  category: PropTypes.string.isRequired,
 };
 
 export default GifContainer;

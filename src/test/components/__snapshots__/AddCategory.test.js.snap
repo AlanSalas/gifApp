@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in AddCategory component Should render properly 1`] = `
+<form
+  className="add-category"
+  onSubmit={[Function]}
+>
+  <p />
+  <div
+    className="add-category__input"
+  >
+    <FcSearch />
+    <input
+      onChange={[Function]}
+      placeholder="Search Gifs!"
+      type="text"
+      value=""
+    />
+  </div>
+</form>
+`;
